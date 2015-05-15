@@ -1,0 +1,4 @@
+imapsync:
+  build: imapsync/
+  volumes:
+    - ./data:/data

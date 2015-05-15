@@ -1,0 +1,20 @@
+<?php
+
+// $mode = ''; // Default to run imapsync.
+// $mode = 'dry'; // Makes imapsync doing nothing, just print what would be done without --dry
+$mode = 'justlogin'; // Just login to both host1 and host2 with users credentials, then exit.
+
+$debug = FALSE;
+
+
+// Mailbox data.
+$data = array();
+
+$data[] = array(
+  'host1' => 'imap.truc.org',
+  'user1' => 'foo',
+  'password1' => 'bar',
+  'host2' => 'imap.trac.org',
+  'user2' => 'foo',
+  'password2' => 'bar',
+);
