@@ -16,7 +16,7 @@ Configure the mailboxes that will be synced in the "data.php" inside the "data" 
 
 ## Run the container
 
-  $ docker-compose up
+    $ docker-compose up
 
 Docker automatically run the sync script with the configured data in the "data" directory.
 
