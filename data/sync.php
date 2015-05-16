@@ -1,6 +1,15 @@
 <?php
 
-include 'data.php';
+if (file_exists('data.php')) {
+  include 'data.php';
+
+  if (empty($data)) {
+    throw new Exception("No data to sync.");
+  }
+}
+else {
+  throw new Exception('No data.php exists. Please create a "data.php" file inside the "data" directory.');
+}
 
 // Build the base command options.
 $cmd_base = array();

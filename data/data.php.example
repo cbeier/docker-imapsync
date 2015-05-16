@@ -10,6 +10,7 @@ $debug = FALSE;
 // Mailbox data.
 $data = array();
 
+// Example with the minimal data for a sync.
 $data[] = array(
   'host1' => 'imap.truc.org',
   'user1' => 'foo',
