@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Run sync script.
-cd /data && php sync.php
+php sync.php
 
 # Command.
 if [ "$1" = 'noop' ]; then

@@ -31,5 +31,7 @@ RUN cd imapsync && mkdir dist && make install
 
 VOLUME /data
 
+WORKDIR /data
+
 ENTRYPOINT ["/entrypoint.sh"]
 CMD ["noop"]
