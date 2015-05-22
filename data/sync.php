@@ -1,14 +1,10 @@
 <?php
 
-if (file_exists('data.php')) {
-  include 'data.php';
-
-  if (empty($data)) {
-    throw new Exception("No data to sync.");
-  }
-}
-else {
+if (!@include_once(dirname(__FILE__) . '/data.php')) {
   throw new Exception('No data.php exists. Please create a "data.php" file inside the "data" directory.');
+}
+if (empty($data)) {
+  throw new Exception("No data to sync.");
 }
 
 // Build the base command options.
